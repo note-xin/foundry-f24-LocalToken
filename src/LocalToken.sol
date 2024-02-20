@@ -7,8 +7,8 @@ import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 /**
  * @title LocalToken
  * @author note-xin
- * @notice fff
- * @dev fff
+ * @notice this contract is a section of cyfrin-foundry-course-f23
+ * @dev this contract implements  ERC 20 token standards 
  */
 contract LocalToken is ERC20{
     /* State Variables */
