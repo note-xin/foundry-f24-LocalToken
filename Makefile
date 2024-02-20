@@ -1,7 +1,7 @@
 # Makefile for deploying contracts
 -include .env
 
-.PHONY: cat all test test-all clean deploy help install snapshot format anvil 
+.PHONY: cat all test test-all clean deploy help install snapshot format anvil cover cover-report
 
 # State values
 DEFAULT_ANVIL_KEY := 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80
@@ -33,7 +33,7 @@ cat :
 # All shorcuts
 gibh :
 	@echo "LocalToken v1.0.0"
-	@echo "makefile v1.0.2"
+	@echo "makefile v1.1.0"
 	@echo ""
 	@make -pRrq : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | column
 
