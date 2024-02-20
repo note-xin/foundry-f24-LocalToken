@@ -7,8 +7,8 @@ import {LocalToken} from "src/LocalToken.sol";
 import {Deploy} from "script/Deploy.s.sol";
 
 /**
- * @dev 
- * @notice 
+ * @dev this contract tests the Local token contract
+ * @notice note that the `console.log` statements are for debugging purposes comment them out
  */
 contract LocalTokenTest is Test {
     /* State Variables */
